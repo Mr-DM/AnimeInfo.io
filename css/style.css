@@ -58,3 +58,34 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.MoreAnime {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+.MoreAnime h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 150;
+    text-align: center;
+}
+.linkMore{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #242629;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+}
