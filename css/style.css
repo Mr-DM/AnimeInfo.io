@@ -59,7 +59,7 @@ body{
     justify-content: center;
 }
 
-.MoreAnime {
+.moreanime {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -67,7 +67,7 @@ body{
     flex-wrap: wrap;
     gap: 150px;
 }
-.MoreAnime h2 {
+.moreanime h2 {
     color: #FFFFFF;
     font-size: 20px;
     font-family: "Heebo", sans-serif;
