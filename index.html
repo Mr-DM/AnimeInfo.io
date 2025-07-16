@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Info</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header id="header">
         <h1 id="title">Anime Info</h1>
-        <nav id="nav">
+        <nav id="nav" class="menu">
             <ul class="navBar">
                 <li><a id="home" href="index.html">Home</a></li>
                 <li><a href="popular.html">Popular</a></li>
                 <li><a href="animeList.html">Anime List</a></li>
                 <li><a href="random.html">Random</a></li>
-                <li><a href="search.html"><img src="search-icon.png" alt="Search"></a></li> 
+                <li><a href="search.html"><img src="Img/search-icon.png" alt="Search"></a></li>
             </ul>
         </nav>
+        <div class="menu_small_icon">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+        <div class="menu-small">
+            <h1 id="title2">Anime Info</h1>
+            <div class="menu_small_item"><a style="text-decoration: none; color: white;" id="home"
+                    href="index.html">Home</a></div>
+            <div class="menu_small_item"><a style="text-decoration: none; color: white;" href="popular.html">Popular</a>
+            </div>
+            <div class="menu_small_item"><a style="text-decoration: none; color: white;" href="animeList.html">Anime
+                    List</a></div>
+            <div class="menu_small_item"><a style="text-decoration: none; color: white;" href="random.html">Random</a>
+            </div>
+            <div class="menu_small_item"><a style="text-decoration: none; color: white;" href="search.html"><img
+                        src="Img/search-icon.png" alt="Search"></a></div>
+        </div>
+
     </header>
+
     <div class="line"></div>
-    <main> 
-        <section>
-           <h1 class="section-title">Best Popular</h1>
-           <div class="popular-anime">
-                <div class="onepiece">
-                    <img src="Img/onepiece.png" alt="">
-                    <h2>One Piece</h2>
-                </div>
-                <div class="naruto">
-                    <img src="Img/Naruto.png" alt="">
-                    <h2>Naruto</h2>
-                </div>
-                <div class="bleach">
-                    <img src="Img/Bleach.png" alt="">
-                    <h2>Bleach</h2>
-                </div>
-           </div>
+    <main>
+        <section class="popular">
+            <h1 class="section-title">Best Popular</h1>
+            <div class="popular-anime">
+                <a href="Anime_html&css/onepiece.html">
+                    <div class="onepiece">
+                        <img src="Img/onepiece.png" alt="" id="">
+                        <h2>One Piece</h2>
+                    </div>
+                </a>
+                <a href="Anime_html&css/naruto.html">
+                    <div class="naruto">
+                        <img src="Img/Naruto.png" alt="">
+                        <h2>Naruto</h2>
+                    </div>
+                </a>
+                <a href="Anime_html&css/bleach.html">
+                    <div class="bleach">
+                        <img src="Img/Bleach.png" alt="">
+                        <h2>Bleach</h2>
+                    </div>
+                </a>
+            </div>
         </section>
         <div class="line"></div>
         <h1 class="section-title">More Anime</h1>
-        <section class="MoreAnime">
-            
-            <div class="jjk">
-                <img src="Img/jjk.png" alt="">
-                <h2>Jujutsu Kaisen</h2>
-            </div>
-            <div class="demon-slayer">
-                <img src="Img/demon.png" alt="">
-                <h2>Demon Slayer</h2>
-            </div>
-            <div class="soloLeveling">
-                <img src="Img/solo.png" alt="">
-                <h2>Solo Leveling</h2>
-            </div>
-            <div class="sevenD">
-                <img src="Img/seven.png" alt="">
-                <h2>Seven Deadly Sins</h2>
-            </div>
+        <section class="moreanime">
+            <a href="Anime_html&css/jjk.html">
+                <div class="jjk">
+                    <img src="Img/jjk.png" alt="">
+                    <h2>Jujutsu Kaisen</h2>
+                </div>
+            </a>
+            <a href="Anime_html&css/demon.html">
+                <div class="demon-slayer">
+                    <img src="Img/demon.png" alt="">
+                    <h2>Demon Slayer</h2>
+                </div>
+            </a>
+            <a href="Anime_html&css/solo.html">
+                <div class="soloLeveling">
+                    <img src="Img/solo.png" alt="">
+                    <h2>Solo Leveling</h2>
+                </div>
+            </a>
+            <a href="Anime_html&css/seven.html">
+                <div class="sevenD">
+                    <img src="Img/seven.png" alt="">
+                    <h2>Seven Deadly Sins</h2>
+                </div>
+            </a>
         </section>
 
         <div class="linkMore"><a href="animeList.html"><img src="Img/button.png" alt=""></a></div>
@@ -65,5 +100,9 @@
     <footer>
         <p>&copy; Mr-Dm 2025</p>
     </footer>
+    <script src="js/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

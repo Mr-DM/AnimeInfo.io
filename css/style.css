@@ -1,91 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-body{
-    background-color: #0C0F13;
-    color: #FFFFFF
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+body {
+  background-color: #0c0f13;
+  color: #ffffff;
 }
 #title {
-    font-size: 48px;
-    font-family: "Heebo", sans-serif;
-    margin-left: 20px;
+  font-size: 48px;
+  font-family: "Heebo", sans-serif;
+  margin-left: 20px;
 }
-#header{
-    display: flex;
-    justify-content: space-between;
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navBar {
+  list-style: none;
+}
 
-}
-#nav{
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-.navBar {   
-    list-style: none;
-}
 .navBar li {
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
 }
 .navBar li a {
-    color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 150;
+}
+#home {
+  font-weight: 600;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #242629;
+}
+.section-title {
+  font-size: 48px;
+  font-family: "Heebo", sans-serif;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.popular-anime {
+  display: flex;
+  justify-content: space-around;
+}
+.popular-anime h2 {
+  font-size: 48px;
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.moreanime {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+.moreanime h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 150;
+  text-align: center;
+}
+.linkMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #242629;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+@media (max-width: 1200px) {
+  #title {
+    font-size: 40px;
+  }
+  .navBar li a {
+    font-size: 20px;
+  }
+  .section-title {
+    font-size: 40px;
+  }
+  .popular-anime h2 {
+    font-size: 40px;
+  }
+  .moreanime h2 {
+    font-size: 18px;
+  }
+  .popular-anime {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-anime {
+    flex-direction: column;
+    align-items: center;
+  }
+  #title {
+    font-size: 36px;
+  }
+  .navBar li a {
+    font-size: 18px;
+  }
+  .section-title {
+    font-size: 36px;
+  }
+  .popular-anime h2 {
+    font-size: 36px;
+  }
+  .moreanime h2 {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #title {
+    font-size: 28px;
+  }
+  .navBar li a {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .popular-anime h2 {
+    font-size: 28px;
+  }
+  .moreanime h2 {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+.menu_small_icon {
+  display: none;
+}
+
+.menu-small {
+  display: none;
+  height: 2em;
+}
+
+.menu_small_item {
+  display: none;
+}
+
+.stick {
+  width: 80%;
+  height: 5px;
+  background: white;
+}
+
+@media (max-width: 650px) {
+  #nav {
+    display: none;
+  }
+  #title {
+    color: transparent;
+  }
+  #title2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-small {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    background: #0c0f13;
+    transform: translateX(-100%);
+  }
+
+  .menu_small_item {
+    color: #ffffff;
     text-decoration: none;
     font-size: 24px;
     font-family: "Heebo", sans-serif;
     font-weight: 150;
-}
-#home{
-    font-weight: 600;
-}
-.line{
-    width: 100%;
-    height: 1px;
-    background-color: #242629;
-}
-.section-title{
-    font-size: 48px;
-    font-family: "Heebo", sans-serif;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.popular-anime{
+    height: 2em;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_small_item:first-child {
+    padding-top: calc(50px + 2em);
+  }
+
+  .menu_small_icon {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 1;
     justify-content: space-around;
-}
-.popular-anime h2 {
-    font-size: 48px;
-    font-family: "Heebo", sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-}
-
-.MoreAnime {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 150px;
-}
-.MoreAnime h2 {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: "Heebo", sans-serif;
-    font-weight: 150;
-    text-align: center;
-}
-.linkMore{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-footer {
-    background-color: #242629;
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    font-family: "Heebo", sans-serif;
+    align-items: center;
+    flex-direction: column;
+  }
 }
